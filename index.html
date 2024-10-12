@@ -5,78 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME STYLER</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
+    <!-- =======================================AOS (Animate On Scroll) library =============================== -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- =================================boootstrap======================================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ==========================================Font Awesome=========================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- =======================================css=================================================== -->
     <link rel="stylesheet" href="./assests/style.css">
+    <!-- ========================================logo================================================== -->
     <link rel="icon" type="image/x-icon" href="./assests/images/logo.png">
 
 </head>
-<style>
-    .image-container {
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 10px;
-    }
-
-    .image-container img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.5s;
-
-    }
-
-    .image-container:hover img {
-        transform: scale(1.1);
-    }
-
-    .image-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.5s;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: monospace;
-        font-size: 18px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: bisque;
-        flex-direction: column;
-        transition: opacity 0.5s;
-        padding: 0;
-        margin: 0;
-    }
-
-    .image-container:hover .image-text {
-        opacity: 1;
-    }
-
-    .imge {
-        height: 295px !important;
-    }
-
-    #map {
-        height: 100vh;
-        width: 100%;
-        margin-bottom: 50px;
-        margin-top: -100px;
-    }
-</style>
 
 <body>
+    <!-- ===========================================nav bar============================================== -->
     <nav>
         <div class="wrapper">
             <a class="navbar-brand" href="#">
@@ -94,8 +38,8 @@
                     <label for="showMega" class="mobile-item">Mega Menu</label>
                     <div class="mega-box">
                         <div class="content">
-                            <div class="row">
-                                <header><a href="product.html?services=furniture">furniture</a></header>
+                            <div class="row container">
+                                <header><a href="product.html?services=furniture" class="text-dark text-center">furniture</a></header>
                                 <ul class="mega-links">
                                     <li><a href="./furniture/sofa.html">sofas & couches</a></li>
                                     <li><a href="./furniture/chairs.html">chairs & recliners</a></li>
@@ -104,8 +48,8 @@
                                     <li><a href="./furniture/storage.html">storage</a></li>
                                 </ul>
                             </div>
-                            <div class="row">
-                                <header><a href="product.html?services=kitchen">kitchen</a></header>
+                            <div class="row container">
+                                <header><a href="product.html?services=kitchen" class="text-dark text-center">kitchen</a></header>
                                 <ul class="mega-links">
                                     <li><a href="./kitchen/cabinets.html"> Cabinets & Pantries</a></li>
                                     <li><a href="./kitchen/counter.html"> Counter tops</a></li>
@@ -114,8 +58,8 @@
                                     <li><a href="./kitchen/back.html"> Backsplashes</a></li>
                                 </ul>
                             </div>
-                            <div class="row">
-                                <header><a href="product.html?services=Lighting">Lighting</a></header>
+                            <div class="row container">
+                                <header><a href="product.html?services=Lighting" class="text-dark text-center">Lighting</a></header>
                                 <ul class="mega-links">
                                     <li><a href="./lighting/ceiling.html">Ceiling Lights</a></li>
                                     <li><a href="./lighting/walls.html">Wall Lights</a></li>
@@ -124,8 +68,8 @@
                                     <li><a href="./lighting/outdoor.html">Outdoor Lighting</a></li>
                                 </ul>
                             </div>
-                            <div class="row">
-                                <header><a href="product.html?services=Decor">Decor</a></header>    
+                            <div class="row container">
+                                <header><a href="product.html?services=Decor" class="text-dark text-center">Decor</a></header>
                                 <ul class="mega-links">
                                     <li><a href="./decor/rugs.html"> Rugs & Carpets</a></li>
                                     <li><a href="./decor/curtains.html"> Curtains & Blinds</a></li>
@@ -134,8 +78,8 @@
                                     <li><a href="./decor/vasses.html"> Vases & Plant Pots</a></li>
                                 </ul>
                             </div>
-                            <div class="row">
-                                <header><a href="product.html?services=Bathroom">Bathroom</a></header>
+                            <div class="row container">
+                                <header><a href="product.html?services=Bathroom" class="text-dark text-center">Bathroom</a></header>
                                 <ul class="mega-links">
                                     <li><a href="./bathroom/vanities.html">Vanities & Cabinets</a></li>
                                     <li><a href="./bathroom/showers.html">Showers & Bathtubs</a></li>
@@ -167,8 +111,7 @@
             <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
     </nav>
-
-
+    <!-- ===========================================carousel============================================== -->
     <div class="carousel">
 
         <div class="list">
@@ -298,7 +241,7 @@
         </div>
     </div>
 
-<!-- ==================================================contact========================================= -->
+    <!-- ==================================================contact========================================= -->
     <div class="contact">
         <div class="container py-4" id="contact">
             <div class="contact-header text-center py-4">
@@ -448,7 +391,7 @@
             </div>
         </section>
 
-        
+
         <div class="modal fade" id="feed-modal" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -460,7 +403,7 @@
                 </div>
             </div>
         </div>
-                <!-- ===================================================Reviews======================================= -->
+        <!-- ===================================================Reviews======================================= -->
 
         <div class="container text-center">
             <div class="row" id="Reviews">
@@ -569,8 +512,9 @@
                 </div>
             </div>
         </div>
+        <!-- =======================================geolocation========================== -->
         <div id="map" class="container" data-aos="fade-up"></div>
-
+        <!-- ===========================footer==================================== -->
         <footer class="footer text-light py-4">
             <div class="container ">
                 <div class="row gy-4">
@@ -639,11 +583,9 @@
                     <div class="col-lg-3 col-md-12 footer-contact text-center text-md-center">
                         <h4>Contact Us</h4>
                         <p>
-                            <a href="https://maps.app.goo.gl/96fXw8EjdyUTUNN5A">Civic Center Block -14
+                            <a href="https://maps.app.goo.gl/96fXw8EjdyUTUNN5A">
                                 <br>
-                                Gulshan-e-Iqbal Karachi -75300
-                                <br>
-                                Pakistan</a>
+                                A108 Adam Street, New York, NY 535022
                             <br>
                             <br>
                             <strong><a href="tel:+923187654561">Phone:</strong>

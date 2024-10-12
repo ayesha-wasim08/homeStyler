@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOMESTYLER</title>
+    <!-- =================================logo======================== -->
     <link rel="icon" type="image/x-icon" href="../assests/images/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ====================================AOS (Animate On Scroll)============================ -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ================================Font Awesome=================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ===================================== Bootstrap's CSS============================ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ===================================css=============================== -->
     <link rel="stylesheet" href="../assests/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </head>
+
 <body>
     <nav>
         <div class="wrapper">
@@ -22,16 +29,16 @@
             <input type="radio" name="slider" id="close-btn">
             <ul class="nav-links">
                 <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="../about.html">About</a></li>
                 <li>
-                    <a href="../product.html" class="desktop-item">Product</a>
+                    <a href="../product.html" class="desktop-item active">Product</a>
                     <input type="checkbox" id="showMega">
                     <label for="showMega" class="mobile-item">Mega Menu</label>
                     <div class="mega-box">
                         <div class="content">
-                            <div class="row">
-                                <header><a href="../product.html?services=furniture">furniture</a></header>
+                            <div class="row container">
+                                <header><a href="../product.html?services=furniture"class="text-dark text-center">furniture</a></header>
                                 <ul class="mega-links">
                                     <li><a href="../furniture/sofa.html">sofas & couches</a></li>
                                     <li><a href="../furniture/chairs.html">chairs & recliners</a></li>
@@ -40,8 +47,8 @@
                                     <li><a href="../furniture/storage.html">storage</a></li>
                                 </ul>
                             </div>
-                            <div class="row">
-                                <header><a href="../product.html?services=kitchen">kitchen</a></header>
+                            <div class="row container">
+                                <header><a href="../product.html?services=kitchen"class="text-dark text-center">kitchen</a></header>
                                 <ul class="mega-links">
                                     <li><a href="../kitchen/cabinets.html"> Cabinets & Pantries</a></li>
                                     <li><a href="../kitchen/counter.html"> Counter tops</a></li>
@@ -50,8 +57,8 @@
                                     <li><a href="../kitchen/back.html"> Backsplashes</a></li>
                                 </ul>
                             </div>
-                            <div class="row">
-                                <header><a href="../product.html?services=Lighting">Lighting</a></header>
+                            <div class="row container">
+                                <header><a href="../product.html?services=Lighting"class="text-dark text-center">Lighting</a></header>
                                 <ul class="mega-links">
                                     <li><a href="../lighting/ceiling.html">Ceiling Lights</a></li>
                                     <li><a href="../lighting/walls.html">Wall Lights</a></li>
@@ -60,8 +67,8 @@
                                     <li><a href="../lighting/outdoor.html">Outdoor Lighting</a></li>
                                 </ul>
                             </div>
-                            <div class="row">
-                                <header><a href="../product.html?services=Decor">Decor</a></header>    
+                            <div class="row container">
+                                <header><a href="../product.html?services=Decor"class="text-dark text-center">Decor</a></header>
                                 <ul class="mega-links">
                                     <li><a href="../decor/rugs.html"> Rugs & Carpets</a></li>
                                     <li><a href="../decor/curtains.html"> Curtains & Blinds</a></li>
@@ -70,8 +77,8 @@
                                     <li><a href="../decor/vasses.html"> Vases & Plant Pots</a></li>
                                 </ul>
                             </div>
-                            <div class="row">
-                                <header><a href="../product.html?services=Bathroom">Bathroom</a></header>
+                            <div class="row container">
+                                <header><a href="../product.html?services=Bathroom"class="text-dark text-center">Bathroom</a></header>
                                 <ul class="mega-links">
                                     <li><a href="../bathroom/vanities.html">Vanities & Cabinets</a></li>
                                     <li><a href="../bathroom/showers.html">Showers & Bathtubs</a></li>
@@ -85,7 +92,7 @@
                 </li>
 
                 <li>
-                    <a href="#Designer" class="desktop-item">Designer</a>
+                    <a href="../index.html#Designer" class="desktop-item">Designer</a>
                     <input type="checkbox" id="showDrop">
                     <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                     <ul class="drop-menu">
@@ -247,11 +254,9 @@
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-center">
                     <h4>Contact Us</h4>
                     <p>
-                        <a href="https://maps.app.goo.gl/96fXw8EjdyUTUNN5A">Civic Center Block -14
+                        <a href="https://maps.app.goo.gl/96fXw8EjdyUTUNN5A">
                             <br>
-                            Gulshan-e-Iqbal Karachi -75300
-                            <br>
-                            Pakistan</a>
+                            A108 Adam Street, New York, NY 535022
                         <br>
                         <br>
                         <strong><a href="tel:+923187654561">Phone:</strong>
@@ -290,7 +295,7 @@
 
         buttons.forEach(button => {
             button.addEventListener('click', function (event) {
-                event.preventDefault(); 
+                event.preventDefault();
 
                 const cardBody = button.closest('.card-body');
                 const priceText = cardBody.querySelector('.card-title').innerText;
@@ -344,9 +349,12 @@
             selectedImageDiv.innerHTML = ''; // Clear selected image
         }
     </script>
+    <!-- ===================================== Bootstrap's js============================ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
+
 </html>
